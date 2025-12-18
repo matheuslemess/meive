@@ -193,7 +193,7 @@ export const SlideContainer = () => {
                 Obrigado por fazer parte da minha vida, e do meu futuro
                 irmãozinho(a)...
               </p>
-              <p className="mb-8 font-serif text-rose-300/60 text-xs font-serif tracking-widest uppercase">
+              <p className="mb-8 font-serif text-rose-300/60 text-xs tracking-widest uppercase">
                 Feito com carinho pela Meive. 💖
               </p>
               <button
