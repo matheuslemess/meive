@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { CoverSlide } from "../slides/CoverSlide";
 import { CarouselSlide } from "../slides/CarouselSlide";
+import { RoleSlide } from "../slides/RoleSlide";
 import { SecretSlide } from "../slides/SecretSlide";
 import { RevealSlide } from "../slides/RevealSlide";
+import { ExpectationSlide } from "../slides/ExpectationSlide";
+import { GuessSlide } from "../slides/GuessSlide";
 
 import { MusicPlayer } from "../components/MusicPlayer";
 
@@ -19,6 +22,9 @@ export const SlideContainer = () => {
     { type: "carousel" },
     { type: "secret" },
     { type: "reveal" },
+    { type: "role" }, // Moved after Reveal
+    { type: "expectation" },
+    { type: "guess" }, // NEW
     {
       type: "content",
       title: "Vem Aí",
@@ -85,6 +91,14 @@ export const SlideContainer = () => {
             <div className="absolute top-10 left-10 w-32 h-32 bg-rose-200/50 rounded-full blur-3xl animate-pulse" />
             <div className="absolute bottom-10 right-10 w-48 h-48 bg-amber-200/40 rounded-full blur-3xl animate-pulse delay-700" />
 
+            {/* Background Decorativo - Nuvens sutis */}
+            <div className="absolute top-20 left-10 text-rose-100/50 text-8xl animate-pulse pointer-events-none">
+              ☁️
+            </div>
+            <div className="absolute bottom-32 right-10 text-amber-100/50 text-9xl animate-pulse delay-1000 pointer-events-none">
+              ☁️
+            </div>
+
             <div className="z-10 flex flex-col items-center animate-in fade-in slide-in-from-bottom-10 duration-1000">
               <div className="relative mb-8 group cursor-pointer">
                 <div className="w-64 h-64 md:w-80 md:h-80 relative">
@@ -132,9 +146,29 @@ export const SlideContainer = () => {
         </SlideWrapper>
 
         <SlideWrapper>
+          <RoleSlide />
+        </SlideWrapper>
+
+        <SlideWrapper>
+          <ExpectationSlide />
+        </SlideWrapper>
+
+        <SlideWrapper>
+          <GuessSlide />
+        </SlideWrapper>
+
+        <SlideWrapper>
           <div className="w-full h-full flex flex-col items-center justify-center bg-rose-50 text-center p-8 relative overflow-hidden">
             <div className="absolute top-[-10%] right-[-10%] w-64 h-64 bg-rose-200/40 rounded-full blur-3xl animate-pulse" />
             <div className="absolute bottom-[-10%] left-[-10%] w-80 h-80 bg-amber-100/50 rounded-full blur-3xl animate-pulse delay-1000" />
+
+            {/* Background Decorativo - Nuvens sutis */}
+            <div className="absolute top-20 left-10 text-rose-100/50 text-8xl animate-pulse pointer-events-none">
+              ☁️
+            </div>
+            <div className="absolute bottom-32 right-10 text-amber-100/50 text-9xl animate-pulse delay-1000 pointer-events-none">
+              ☁️
+            </div>
 
             <div className="z-10 flex flex-col items-center animate-in scale-in duration-700">
               <div className="relative mb-8 transform hover:scale-105 transition-transform duration-500">
@@ -152,7 +186,8 @@ export const SlideContainer = () => {
               </div>
 
               <h2 className="text-3xl md:text-5xl font-handwriting text-rose-600 mb-4 drop-shadow-sm">
-                Espero que você tenha gostado da novidade tanto quanto eu... 👨‍👩‍👧‍👦
+                Bem... espero que você tenha gostado da novidade tanto quanto
+                eu... 👨‍👩‍👧‍👦
               </h2>
               <p className="mb-8 font-serif text-rose-800 text-md md:text-xl max-w-md opacity-90">
                 Obrigado por fazer parte da minha vida, e do meu futuro

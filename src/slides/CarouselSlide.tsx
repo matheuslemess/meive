@@ -115,7 +115,12 @@ export const CarouselSlide = () => {
         <div className="absolute bottom-20 right-10 text-amber-200/40 animate-bounce text-4xl delay-700">
           ⭐
         </div>
-        <div className="absolute top-1/2 left-1/2 text-rose-100/30 text-9xl transform -translate-x-1/2 -translate-y-1/2">
+
+        {/* Background Decorativo - Nuvens sutis (Match Style) */}
+        <div className="absolute top-20 left-10 text-rose-100/50 text-8xl animate-pulse">
+          ☁️
+        </div>
+        <div className="absolute bottom-32 right-10 text-amber-100/50 text-9xl animate-pulse delay-1000">
           ☁️
         </div>
       </div>

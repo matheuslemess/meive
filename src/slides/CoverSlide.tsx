@@ -19,6 +19,14 @@ export const CoverSlide: React.FC<CoverSlideProps> = ({ onStart }) => {
         <div className="absolute bottom-[-10%] right-[-10%] w-[60%] h-[60%] bg-gradient-to-t from-rose-200/40 to-transparent rounded-full blur-[100px] animate-pulse duration-[5s] delay-1000" />
       </div>
 
+      {/* Background Decorativo - Nuvens sutis */}
+      <div className="absolute top-20 left-10 text-rose-100/50 text-8xl animate-pulse pointer-events-none">
+        ☁️
+      </div>
+      <div className="absolute bottom-32 right-10 text-amber-100/50 text-9xl animate-pulse delay-1000 pointer-events-none">
+        ☁️
+      </div>
+
       <div className="z-10 flex flex-col items-center text-center p-8 max-w-md w-full relative">
         <div className="mb-8 animate-fade-in-up">
           <div className="relative">

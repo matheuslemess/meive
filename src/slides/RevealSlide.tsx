@@ -60,6 +60,14 @@ export const RevealSlide: React.FC<RevealSlideProps> = ({ isActive }) => {
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-200/30 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
       </div>
 
+      {/* Background Decorativo - Nuvens sutis */}
+      <div className="absolute top-20 left-10 text-rose-100/50 text-8xl animate-pulse pointer-events-none">
+        ☁️
+      </div>
+      <div className="absolute bottom-32 right-10 text-amber-100/50 text-9xl animate-pulse delay-1000 pointer-events-none">
+        ☁️
+      </div>
+
       <div className="z-10 w-full h-full flex flex-col px-4 py-6 justify-between items-center overflow-hidden">
         <div
           className={`flex-shrink-0 text-center transition-all duration-1000 transform ${
