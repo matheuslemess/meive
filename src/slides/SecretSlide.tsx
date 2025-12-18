@@ -58,7 +58,7 @@ export const SecretSlide = () => {
               isRevealed ? "opacity-0" : "opacity-100"
             }`}
           >
-            Você já imagina que é?? 🙈
+            Já imaginou oque é? 🙈
           </h2>
 
           <div className="relative w-64 h-64 flex items-center justify-center">
@@ -103,7 +103,7 @@ export const SecretSlide = () => {
               isRevealed ? "opacity-0" : "opacity-100"
             }`}
           >
-            Toque para descobrir
+            Toque para saber
           </p>
         </div>
       </div>
