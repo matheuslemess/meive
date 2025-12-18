@@ -6,6 +6,11 @@ const IMAGES = [
   "/img/ceci.jpeg",
   "/img/dani.jpeg",
   "/img/danielelali.jpeg",
+  "/img/foto1.jpeg",
+  "/img/foto2.jpeg",
+  "/img/foto3.jpeg",
+  "/img/foto4.jpeg",
+  "/img/foto5.jpeg",
   "/img/julia.jpeg",
   "/img/luiza.jpeg",
   "/img/mi.jpeg",
@@ -18,6 +23,7 @@ const IMAGES = [
   "/img/vorosy.jpeg",
   "/img/vos.jpeg",
   "/img/vovo.jpeg",
+  "/img/thamirs.jpeg",
 ];
 
 export const CarouselSlide = () => {
