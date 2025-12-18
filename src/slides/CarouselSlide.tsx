@@ -10,10 +10,12 @@ const IMAGES = [
   "/img/luiza.jpeg",
   "/img/mi.jpeg",
   "/img/paulo.jpeg",
+  "/img/rosy.jpeg",
   "/img/thay.jpeg",
   "/img/tiaevo.jpeg",
   "/img/tiallai.jpeg",
   "/img/tiathay.jpeg",
+  "/img/vorosy.jpeg",
   "/img/vos.jpeg",
   "/img/vovo.jpeg",
 ];
