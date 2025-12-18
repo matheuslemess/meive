@@ -126,10 +126,6 @@ export const SlideContainer = () => {
                 ...e tenho uma fofoca pra te contar!
               </p>
             </div>
-
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-rose-300/50 animate-pulse text-sm">
-              (Deslize para continuar)
-            </div>
           </div>
         </SlideWrapper>
 
@@ -157,7 +153,7 @@ export const SlideContainer = () => {
           <GuessSlide />
         </SlideWrapper>
 
-        <SlideWrapper>
+        <SlideWrapper showSwipeHint={false}>
           <div className="w-full h-full flex flex-col items-center justify-center bg-rose-50 text-center p-8 relative overflow-hidden">
             <div className="absolute top-[-10%] right-[-10%] w-64 h-64 bg-rose-200/40 rounded-full blur-3xl animate-pulse" />
             <div className="absolute bottom-[-10%] left-[-10%] w-80 h-80 bg-amber-100/50 rounded-full blur-3xl animate-pulse delay-1000" />
@@ -215,6 +211,19 @@ export const SlideContainer = () => {
   );
 };
 
-const SlideWrapper = ({ children }: { children: React.ReactNode }) => (
-  <div className="w-full h-full flex-shrink-0 relative">{children}</div>
+const SlideWrapper = ({
+  children,
+  showSwipeHint = true,
+}: {
+  children: React.ReactNode;
+  showSwipeHint?: boolean;
+}) => (
+  <div className="w-full h-full flex-shrink-0 relative">
+    {children}
+    {showSwipeHint && (
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-rose-300/50 animate-pulse text-sm pointer-events-none z-50">
+        (Deslize para continuar)
+      </div>
+    )}
+  </div>
 );
